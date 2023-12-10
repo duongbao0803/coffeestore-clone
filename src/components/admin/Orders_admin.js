@@ -1,34 +1,11 @@
 import React from "react";
-import "antd/dist/antd.css";
-import {
-  Button,
-  Layout,
-  Space,
-  Table,
-  Tag,
-  Spin,
-  message,
-  Popconfirm,
-  notification,
-  Modal,
-} from "antd";
-import {
-  CaretDownOutlined,
-  CaretUpOutlined,
-  DeleteOutlined,
-  EditOutlined,
-  LoadingOutlined,
-  UserAddOutlined,
-} from "@ant-design/icons";
-import AppMenu from "../../components/admin/AppMenu";
-import { deleteStaff, getAlUser } from "../../api/admin/Users";
+import { Button, Space, Table, Spin, notification, Modal } from "antd";
+import { CaretDownOutlined, LoadingOutlined } from "@ant-design/icons";
 import { useEffect } from "react";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getAllUserProfile } from "../../reducer/admin/user/userAction";
 import Search from "antd/lib/input/Search";
 import { useNavigate } from "react-router-dom";
-import { getDetailUser } from "../../reducer/admin/user/userSlice";
 import { getAllOrders } from "../../reducer/admin/order/orderActions";
 import {
   getMaHDAndMaKH,
